@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Descubrí tu Futuro! - Escuela Industrial N° 9</title>
+    <!-- Script de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Colores Vivos */
+        .bg-tech-blue { background-color: #0d47a1; }
+        .text-tech-blue { color: #0d47a1; }
+        .bg-build-green { background-color: #00796b; }
+        .text-build-green { color: #00796b; }
+        .bg-accent-orange { background-color: #f57c00; }
+        .text-accent-orange { color: #f57c00; }
+        
+        /* Estilo para las secciones */
+        .section {
+            min-height: 80vh; /* Para que cada "diapositiva" ocupe buena parte de la pantalla */
+            padding: 4rem 1rem; /* Espaciado interno */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        /* Animación sutil para los títulos */
+        @keyframes fadeInGrow {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .fade-in-grow {
+            animation: fadeInGrow 0.8s ease-out forwards;
+        }
+        
+        /* Botones grandes y claros */
+        .nav-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            border-radius: 9999px; /* Botones redondeados */
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- ==== DIAPOSITIVA 1: BIENVENIDA ==== -->
+    <section id="inicio" class="section bg-gradient-to-br from-blue-100 via-white to-green-100">
+        <div class="container mx-auto px-4 fade-in-grow">
+            <!-- 
+              IMPORTANTE: Reemplazá este 'src' con la ruta a tu logo 'LOGO-INDUS-2.png'
+            -->
+            <img src="./img/logo.png" alt="Logo Escuela Industrial N° 9" class="h-20 mx-auto mb-8">
+            <h1 class="font-display text-4xl md:text-6xl font-bold text-tech-blue mb-4">¡Hola, Futuros Técnicos!</h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                ¿Listos para descubrir un lugar donde la curiosidad se transforma en CREACIÓN?
+            </p>
+            <p class="text-lg text-gray-600 mb-6">Presentado por la Escuela Industrial N° 9 "15 de Noviembre"</p>
+            <p class="font-semibold">Conocé a nuestro equipo:</p>
+            <p class="text-gray-600">Pablo Limardo (ACPI)y ¡nuestros SÚPER ALUMNOS!</p>
+            
+            <!-- Botón para empezar -->
+            <a href="#que-es-tecnica" class="nav-button bg-accent-orange text-white mt-10">
+                ¡Empecemos la Aventura! 👇
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== DIAPOSITIVA 2: ¿QUÉ ES UNA ESCUELA TÉCNICA? ==== -->
+    <section id="que-es-tecnica" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-gray-800 mb-8 fade-in-grow">¿Qué tiene de <span class="text-accent-orange">Especial</span> una Escuela Técnica?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="text-left">
+                    <p class="text-lg text-gray-700 mb-6">Imaginen una secundaria donde no solo leen sobre cómo funcionan las cosas... ¡sino que las <span class="font-bold">CONSTRUYEN</span> ustedes mismos!</p>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start">
+                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0">✓</span> 
+                            <span><span class="font-bold">Más Taller, Menos Aburrimiento:</span> Pasás muchas horas creando, diseñando y experimentando en nuestros talleres equipados.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0">✓</span> 
+                            <span><span class="font-bold">Aprendés Haciendo:</span> La teoría se conecta al instante con la práctica. ¡Lo que aprendés, lo usás!</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0">✓</span> 
+                            <span><span class="font-bold">Salís con un Título Profesional:</span> Al terminar, no solo tenés el secundario, ¡tenés un título técnico listo para trabajar o seguir estudiando!</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <img src="./img/teoriavstaller.jpg" alt="Alumnos en el taller vs aula" class="rounded-lg shadow-xl mx-auto">
+            </div>
+             <a href="#mmo" class="nav-button bg-build-green text-white mt-12">
+                Conocé el Camino 1: Construcción 🏗️
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== DIAPOSITIVA 3: CAMINO 1 - MMO ==== -->
+    <section id="mmo" class="section bg-gradient-to-br from-green-100 via-white to-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-build-green mb-8 fade-in-grow">Camino 1: ¡Los <span class="text-gray-800">Constructores</span> del Mañana!</h2>
+            <p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">¿Te imaginás diseñando y construyendo casas, edificios o puentes? ¡Este es tu lugar!</p>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center mb-10">
+                <!-- 
+                  IMAGEN/VIDEO: Reemplazá con fotos/video de alumnos de MMO (planos, maquetas, visitas)
+                -->
+                <img src="./img/mmo.webp" alt="Alumnos de MMO trabajando" class="rounded-lg shadow-xl mx-auto">
+                <div class="text-left space-y-4 text-gray-700 text-lg">
+                    <p>En <span class="font-bold">Maestro Mayor de Obras (MMO)</span> aprendés a:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Dibujar planos geniales en la compu (¡como los profesionales!).</li>
+                        <li>Elegir los mejores materiales para que todo sea resistente.</li>
+                        <li>Construir maquetas para ver tus ideas en 3D.</li>
+                        <li>Entender cómo hacer edificios seguros y amigables con el planeta.</li>
+                    </ul>
+                     <p class="font-bold pt-4">¡Nuestros alumnos de MMO te cuentan!</p>
+                     <p class="text-gray-600 italic">"¡Me encanta pasar del dibujo en la compu a construir la maqueta con mis manos!"</p>
+                     <p class="text-gray-600 italic">"Aprendemos a hacer casas seguras y que gasten poca energía. ¡Está buenísimo!"</p>
+                </div>
+            </div>
+             <a href="#acpi" class="nav-button bg-tech-blue text-white mt-8">
+                Descubrí el Camino 2: Tecnología 🤖
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== DIAPOSITIVA 4: CAMINO 2 - ACPI ==== -->
+    <section id="acpi" class="section bg-gradient-to-br from-blue-100 via-white to-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-tech-blue mb-8 fade-in-grow">Camino 2: ¡Los <span class="text-gray-800">Magos</span> de la Tecnología!</h2>
+            <p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">¿Te copan los robots, programar o hacer que las cosas funcionen solas? ¡Este es tu camino!</p>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center mb-10">
+                 <!-- 
+                  IMAGEN/VIDEO: Reemplazá con fotos/video de alumnos de ACPI (Arduino, Python, PLC, robots)
+                -->
+                <img src="./img/acpi.jpg" alt="Alumnos de ACPI trabajando" class="rounded-lg shadow-xl mx-auto">
+                <div class="text-left space-y-4 text-gray-700 text-lg">
+                    <p>En <span class="font-bold">Automatización y Control (ACPI)</span> aprendés a:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Programar en la compu para darle "inteligencia" a las máquinas.</li>
+                        <li>Usar plaquitas como Arduino para conectar sensores y motores.</li>
+                        <li>Entender cómo funcionan los robots y los sistemas automáticos de las fábricas.</li>
+                        <li>Crear proyectos tecnológicos geniales, ¡desde cero!</li>
+                    </ul>
+                     <p class="font-bold pt-4">¡Nuestros alumnos de ACPI te cuentan!</p>
+                     <p class="text-gray-600 italic">"Lo mejor es ver cómo el código que escribís hace que algo se mueva o prenda una luz. ¡Es genial!"</p>
+                     <p class="text-gray-600 italic">"Usamos las mismas herramientas que en la industria. Te sentís como un inventor de verdad."</p>
+                </div>
+            </div>
+             <a href="#por-que-elegirnos" class="nav-button bg-accent-orange text-white mt-8">
+                ¿Por qué la Industrial N° 9? 🤔
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== DIAPOSITIVA 5: ¿POR QUÉ ELEGIRNOS? ==== -->
+    <section id="por-que-elegirnos" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-gray-800 mb-12 fade-in-grow">¿Por Qué Elegir la <span class="text-tech-blue">Industrial</span> N° <span class="text-build-green">9</span>?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <span class="text-4xl mb-4 block">🛠️</span>
+                    <h3 class="font-bold text-xl mb-2">Aprendés Haciendo</h3>
+                    <p class="text-gray-600">Nuestros talleres son el corazón de la escuela. ¡Te vas a ensuciar las manos!</p>
+                </div>
+                 <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <span class="text-4xl mb-4 block">🎓</span>
+                    <h3 class="font-bold text-xl mb-2">Título Profesional</h3>
+                    <p class="text-gray-600">Salís listo para trabajar o para romperla en la universidad que elijas.</p>
+                </div>
+                 <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <span class="text-4xl mb-4 block">💡</span>
+                    <h3 class="font-bold text-xl mb-2">Desafiante y Divertido</h3>
+                    <p class="text-gray-600">Vas a resolver problemas reales, crear proyectos y hacer amigos con tus mismos intereses.</p>
+                </div>
+            </div>
+            
+            <h3 class="font-bold text-2xl mb-6">Lo Mejor de la Industrial, según Nuestros Alumnos:</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-700 italic">
+                 <p class="bg-blue-50 p-3 rounded">"Poder crear algo con mis propias manos, eso es lo mejor."</p>
+                 <p class="bg-green-50 p-3 rounded">"Los profes te ayudan un montón y el ambiente en el taller está bueno."</p>
+                 <p class="bg-blue-50 p-3 rounded">"Me gusta que aprendemos cosas que sirven para el futuro, para conseguir trabajo."</p>
+                 <p class="bg-green-50 p-3 rounded">"¡Hacer los proyectos para la Expo es lo más divertido del año!"</p>
+            </div>
+
+            <a href="#contacto" class="nav-button bg-tech-blue text-white mt-12">
+                ¡Queremos Conocerte! 👋
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== DIAPOSITIVA 6: CONTACTO Y CIERRE ==== -->
+    <section id="contacto" class="section bg-gradient-to-br from-gray-800 to-gray-900 text-white">
+        <div class="container mx-auto px-4 fade-in-grow">
+            <h2 class="font-display text-3xl md:text-5xl font-bold mb-8">¡Te Esperamos en la <span class="text-accent-orange">Industrial N° 9</span>!</h2>
+            
+            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                ¿Tenés preguntas? ¿Querés saber más? ¡No dudes en contactarnos!
+            </p>
+
+            <div class="bg-white/10 p-8 rounded-lg shadow-lg mb-10 inline-block text-left max-w-md">
+                 <h3 class="font-bold text-2xl mb-4 text-center">Información de Contacto</h3>
+                 <p class="mb-2"><span class="font-semibold">Dirección:</span> Av. Los Pioneros Nº1122, El Calafate</p>
+                 <p class="mb-2"><span class="font-semibold">Teléfono:</span> 2902 490-690</p>
+                 <p class="mb-2"><span class="font-semibold">Email:</span> industrialnueve@yahoo.com.ar</p>
+                 <p class="mb-2"><span class="font-semibold">Web:</span> <a href="https://indunuevecalafate.github.io/acpi/" target="_blank" class="underline hover:text-accent-orange">indunuevecalafate.github.io/acpi/</a> (Chequear si hay una web general)</p>
+                 <p class="mt-4 text-center font-bold text-accent-orange text-xl">¡Y no te pierdas la <span class="underline">Expo Técnica</span> el 19 y 20 de Noviembre!</p>
+            </div>
+
+            <p class="text-2xl font-bold">¡Gracias por escucharnos!</p>
+        </div>
+    </section>
+
+    <!-- Script para navegación suave -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
