@@ -60,13 +60,36 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0,0,0,0.2);
         }
-        
+        .ajuste {
+            height: 100vh;
+            box-sizing: border-box; /* Incluye el padding dentro de la altura total */
+        }
+
+        /* Estilo para el fondo con efecto parallax */
+        .parallax-bg {
+            /* Capa de color semitransparente + imagen de fondo */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.85)), url('./img/indu9.webp');
+
+            /* Efecto Parallax: la imagen de fondo se queda fija */
+            background-attachment: fixed;
+
+            /* Asegura que la imagen cubra toda la sección sin repetirse */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .elegirnos {
+            background-image: url("img/indu9cartel.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        };
     </style>
 </head>
 <body class="bg-gray-50">
 
     <!-- ==== DIAPOSITIVA 1: BIENVENIDA ==== -->
-    <section id="inicio" class="section bg-gradient-to-br from-blue-100 via-white to-green-100 h-100vh">
+    <section id="inicio" class="section bg-gradient-to-br from-blue-100 via-white to-green-100 ajuste">
         <div class="container mx-auto px-4 fade-in-grow">
             <!-- 
               IMPORTANTE: Reemplazá este 'src' con la ruta a tu logo 'LOGO-INDUS-2.png'
@@ -74,11 +97,11 @@
             <img src="./img/logo.png" alt="Logo Escuela Industrial N° 9" class="h-20 mx-auto mb-8">
             <h1 class="font-display text-4xl md:text-6xl font-bold text-tech-blue mb-4">¡Hola, Futuros Técnicos!</h1>
             <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-                ¿Listos para descubrir un lugar donde la curiosidad se transforma en CREACIÓN?
+                ¿Listos para descubrir un lugar donde la <strong>CURIOSIDAD</strong> se transforma en <strong>CREACIÓN</strong>?
             </p>
-            <p class="text-lg text-gray-600 mb-6">Presentado por la Escuela Industrial N° 9 "15 de Noviembre"</p>
-            <p class="font-semibold">Conocé a nuestro equipo:</p>
-            <p class="text-gray-600">Pablo Limardo (ACPI)y ¡nuestros SÚPER ALUMNOS!</p>
+            <p class="text-lg text-gray-600 mb-6 text-2xl">Presentado por la Escuela Industrial N° 9 "15 de Noviembre"</p>
+            <p class="text-xl text-font-semibold">Conocé a nuestro equipo:</p>
+            <p class="text-gray-600 text-xl">Pablo Limardo <strong>(ACPI)</strong> y ¡NUESTROS <strong>SÚPER ALUMNOS</strong>!</p>
             
             <!-- Botón para empezar -->
             <a href="#que-es-tecnica" class="nav-button bg-accent-orange text-white mt-10">
@@ -89,24 +112,24 @@
 
     <!-- ==== DIAPOSITIVA 2: ¿QUÉ ES UNA ESCUELA TÉCNICA? ==== -->
     <section id="que-es-tecnica" class="section bg-white">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 ajuste">
             <h2 class="font-display text-3xl md:text-5xl font-bold text-gray-800 mb-8 fade-in-grow">¿Qué tiene de <span class="text-accent-orange">Especial</span> una Escuela Técnica?</h2>
             
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="text-left">
-                    <p class="text-lg text-gray-700 mb-6">Imaginen una secundaria donde no solo leen sobre cómo funcionan las cosas... ¡sino que las <span class="font-bold">CONSTRUYEN</span> ustedes mismos!</p>
+                    <p class="text-xl text-gray-700 mb-6">Imaginen una secundaria donde no solo leen sobre cómo funcionan las cosas... ¡sino que las <span class="font-bold">CONSTRUYEN</span> ustedes mismos!</p>
                     <ul class="space-y-4 text-left">
                         <li class="flex items-start">
-                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0">✓</span> 
-                            <span><span class="font-bold">Más Taller, Menos Aburrimiento:</span> Pasás muchas horas creando, diseñando y experimentando en nuestros talleres equipados.</span>
+                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0 text-lg">✓</span> 
+                            <span><span class="font-bold text-lg">Más Taller, Menos Aburrimiento:</span> Pasás muchas horas creando, diseñando y experimentando en nuestros talleres equipados.</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0">✓</span> 
-                            <span><span class="font-bold">Aprendés Haciendo:</span> La teoría se conecta al instante con la práctica. ¡Lo que aprendés, lo usás!</span>
+                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0 text-lg">✓</span> 
+                            <span><span class="font-bold text-lg">Aprendés Haciendo:</span> La teoría se conecta al instante con la práctica. ¡Lo que aprendés, lo usás!</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0">✓</span> 
-                            <span><span class="font-bold">Salís con un Título Profesional:</span> Al terminar, no solo tenés el secundario, ¡tenés un título técnico listo para trabajar o seguir estudiando!</span>
+                            <span class="bg-green-500 rounded-full w-6 h-6 text-white flex items-center justify-center mr-3 mt-1 flex-shrink-0 text-lg">✓</span> 
+                            <span><span class="font-bold text-lg">Salís con un Título Profesional:</span> Al terminar, no solo tenés el secundario, ¡tenés un título técnico listo para trabajar o seguir estudiando!</span>
                         </li>
                     </ul>
                 </div>
@@ -133,7 +156,7 @@
                 <div class="text-left space-y-4 text-gray-700 text-lg">
                     <p>En <span class="font-bold">Maestro Mayor de Obras (MMO)</span> aprendés a:</p>
                     <ul class="list-disc list-inside space-y-2">
-                        <li>Dibujar planos geniales en papel y en la compu (¡como los profesionales!).</li>
+                        <li>Dibujar planos geniales en papel y en la compu</li>
                         <li>Elegir los mejores materiales para que todo sea resistente.</li>
                         <li>Construir maquetas para ver tus ideas en 3D.</li>
                         <li>Entender cómo hacer edificios seguros y amigables con el planeta.</li>
@@ -153,7 +176,7 @@
     <section id="acpi" class="section bg-gradient-to-br from-blue-100 via-white to-gray-100">
         <div class="container mx-auto px-4">
             <h2 class="font-display text-3xl md:text-5xl font-bold text-tech-blue mb-8 fade-in-grow">Camino 2: ¡Los <span class="text-gray-800">Magos</span> de la Tecnología!</h2>
-            <p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">¿Te copan los robots, programar o hacer que las cosas funcionen solas? ¡Este es tu camino!</p>
+            <p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">¿Te llaman la atención los robots, las maquinas, programar o hacer que las cosas funcionen solas? ¡Este es tu camino!</p>
             
             <div class="grid md:grid-cols-2 gap-10 items-center mb-10">
                  <!-- 
@@ -163,8 +186,8 @@
                 <div class="text-left space-y-4 text-gray-700 text-lg">
                     <p>En <span class="font-bold">Automatización y Control (ACPI)</span> aprendés a:</p>
                     <ul class="list-disc list-inside space-y-2">
-                        <li>Programar en la compu para darle "inteligencia" a las máquinas.</li>
-                        <li>Usar plaquitas como Arduino para conectar sensores y motores e implementar circuitos eléctricos, electrónicos y programables.</li>
+                        <li>Programar en la compu para darle <strong>"inteligencia"</strong> a las máquinas.</li>
+                        <li>Usar plaquitas como Arduino para conectar sensores y motores e implementar circuitos eléctricos, electrónicos y dispositivos <strong>"aparatos"</strong> programables.</li>
                         <li>Entender cómo funcionan los robots y los sistemas automáticos de las fábricas.</li>
                         <li>Crear proyectos tecnológicos geniales, ¡desde cero!</li>
                     </ul>
@@ -180,8 +203,8 @@
     </section>
 
     <!-- ==== DIAPOSITIVA 5: ¿POR QUÉ ELEGIRNOS? ==== -->
-    <section id="por-que-elegirnos" class="section bg-white">
-        <div class="container mx-auto px-4">
+    <section id="por-que-elegirnos" class="section parallax-bg">
+        <div class="container mx-auto px-4 ajuste">
             <h2 class="font-display text-3xl md:text-5xl font-bold text-gray-800 mb-12 fade-in-grow">¿Por Qué Elegir la <span class="text-tech-blue">Industrial</span> N° <span class="text-build-green">9</span>?</h2>
             
             <div class="grid md:grid-cols-3 gap-8 mb-12">
@@ -209,7 +232,15 @@
                  <p class="bg-blue-50 p-3 rounded">"Me gusta que aprendemos cosas que sirven para el futuro, para conseguir trabajo."</p>
                  <p class="bg-green-50 p-3 rounded">"¡Hacer los proyectos para la Expo es lo más divertido del año!"</p>
             </div>
+                        <h3 class="font-bold text-2xl mb-6 mt-4"> </h3>
 
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-700 italic">
+                 <p class="bg-blue-50 p-3 rounded">...</p>
+                 <p class="bg-green-50 p-3 rounded">...</p>
+                 <p class="bg-blue-50 p-3 rounded">...</p>
+                 <p class="bg-green-50 p-3 rounded">...</p>
+            </div>
+            
             <a href="#contacto" class="nav-button bg-tech-blue text-white mt-12">
                 ¡Queremos Conocerte! 👋
             </a>
@@ -218,7 +249,7 @@
 
     <!-- ==== DIAPOSITIVA 6: CONTACTO Y CIERRE ==== -->
     <section id="contacto" class="section bg-gradient-to-br from-gray-800 to-gray-900 text-white">
-        <div class="container mx-auto px-4 fade-in-grow">
+        <div class="container mx-auto px-4 fade-in-grow ajuste">
             <h2 class="font-display text-3xl md:text-5xl font-bold mb-8">¡Te Esperamos en la <span class="text-accent-orange">Industrial N° 9</span>!</h2>
             
             <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
